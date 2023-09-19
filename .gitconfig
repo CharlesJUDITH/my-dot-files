@@ -1,0 +1,33 @@
+[user]
+	email = user@mail.com
+	name = Charles JUDITH
+
+[color]
+  ui = true
+  diff = auto
+  status = auto
+  branch = auto
+  interactive = auto
+
+[alias]
+  show-aliases = config --get-regexp alias
+	co = checkout
+	br = branch
+	pr = pull --rebase
+	ci = commit
+  s = status -sb
+	gol = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+	oops = commit --amend --no-edit
+	amend= commit --amend
+  wtf = diff --word-diff
+  what = branch -avv
+  fuck = submodule update --init
+  mess = rebase -i HEAD^^^
+
+[core]
+  editor = vim
+
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
