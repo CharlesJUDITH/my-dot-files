@@ -11,14 +11,14 @@
 
 [alias]
   show-aliases = config --get-regexp alias
-	co = checkout
-	br = branch
-	pr = pull --rebase
-	ci = commit
+  co = checkout
+  br = branch
+  pr = pull --rebase
+  ci = commit
   s = status -sb
-	gol = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
-	oops = commit --amend --no-edit
-	amend= commit --amend
+  gol = "log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+  oops = commit --amend --no-edit
+  amend= commit --amend
   wtf = diff --word-diff
   what = branch -avv
   fuck = submodule update --init
@@ -28,6 +28,6 @@
   editor = vim
 
 [filter "hawser"]
-	clean = git hawser clean %f
-	smudge = git hawser smudge %f
-	required = true
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
